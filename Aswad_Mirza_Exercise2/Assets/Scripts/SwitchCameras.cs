@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//Aswad Mirza 991445135
 //Logic to switch cameras of the player, based on the example in week 2
 public class SwitchCameras : MonoBehaviour
 {
