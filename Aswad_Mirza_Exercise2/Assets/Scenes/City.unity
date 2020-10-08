@@ -1157,6 +1157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_WithCollider
       objectReference: {fileID: 0}
+    - target: {fileID: 9162520168103592084, guid: b01f09de119f64b46b2b7936b74e4a7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 9165769738342568996, guid: b01f09de119f64b46b2b7936b74e4a7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2764,6 +2769,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1187511217}
+  - {fileID: 1576649010}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2943,6 +2949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Taxi_with Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583412533970949422, guid: a316a2c152a901f48b9a5d1c9d5e6c35,
+        type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a316a2c152a901f48b9a5d1c9d5e6c35, type: 3}
@@ -3272,6 +3283,170 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547059829}
   m_CullTransparentMesh: 0
+--- !u!1 &1576649009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576649010}
+  - component: {fileID: 1576649012}
+  - component: {fileID: 1576649011}
+  m_Layer: 5
+  m_Name: PanelRadar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1576649010
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576649009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1613503475}
+  m_Father: {fileID: 1197569387}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1576649011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576649009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1576649012
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576649009}
+  m_CullTransparentMesh: 0
+--- !u!1 &1613503474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613503475}
+  - component: {fileID: 1613503477}
+  - component: {fileID: 1613503476}
+  - component: {fileID: 1613503478}
+  m_Layer: 5
+  m_Name: RadarBackGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1613503475
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613503474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1576649010}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1613503476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613503474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 0669683ad73c37e40b03461ee39037bd, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1613503477
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613503474}
+  m_CullTransparentMesh: 0
+--- !u!114 &1613503478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613503474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c02fd445ddd6a4899e0eb9c73a7aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insideRadarDistance: 20
+  blipSizePercentage: 5
+  rawImageBlipCar: {fileID: 6037099374721437973, guid: 0c67bc6989c1e4840875d915dce654b2,
+    type: 3}
+  rawImageBlipCivillian: {fileID: 2251381277118500971, guid: 1b43e4a34203ea04391c01329de688ef,
+    type: 3}
+  playerObject: {fileID: 63523151}
 --- !u!1001 &1640884565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3972,7 +4147,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717795146}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1717795149
 Camera:
   m_ObjectHideFlags: 0
@@ -4804,6 +4979,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Civilian_Bat
       objectReference: {fileID: 0}
+    - target: {fileID: 7935205675164980781, guid: 35887fc63d56b314ab51ab5d512e31be,
+        type: 3}
+      propertyPath: m_TagString
+      value: Civillian
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35887fc63d56b314ab51ab5d512e31be, type: 3}
 --- !u!1001 &2330263935738547037
@@ -4886,6 +5066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Civilian_Female_Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 145371419329522000, guid: 69651696f7b751b4294d640c017e5fd7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Civillian
       objectReference: {fileID: 0}
     - target: {fileID: 145371419329885488, guid: 69651696f7b751b4294d640c017e5fd7,
         type: 3}
@@ -5011,6 +5196,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Police_Car_With_Collider
       objectReference: {fileID: 0}
+    - target: {fileID: 4715595922937256901, guid: d20384c32f345eb419d1b41a51053a26,
+        type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d20384c32f345eb419d1b41a51053a26, type: 3}
 --- !u!1001 &6785130737710248673
@@ -5024,6 +5214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PoliceCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3006058773557607980, guid: b28f0fa2333491a488dd85db7790eb35,
+        type: 3}
+      propertyPath: m_TagString
+      value: Civillian
       objectReference: {fileID: 0}
     - target: {fileID: 3006058773558026828, guid: b28f0fa2333491a488dd85db7790eb35,
         type: 3}
@@ -5148,6 +5343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bus_With_Collider
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627321258500508889, guid: b5c1bd1e3a213d041b6959a43e2d1f28,
+        type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c1bd1e3a213d041b6959a43e2d1f28, type: 3}
@@ -5377,6 +5577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Civillian_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750973465787500177, guid: 045ea4dc43ef3474187a019211f47d0b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Civillian
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 045ea4dc43ef3474187a019211f47d0b, type: 3}
