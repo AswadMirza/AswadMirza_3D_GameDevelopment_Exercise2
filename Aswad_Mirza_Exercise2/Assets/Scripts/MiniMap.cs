@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 
 //Aswad Mirza 991445135
-//Obtained from the textbook, with a minor change to just have a public player Gameobject
+//Based on code from the textbook "Unity 2018 Cookbook - Third Edition" Chapter 7  exercise 6
+/*
+ APA rEFERENCE:
+Smith, M., & Safari, an O'Reilly Media Company. (2018). Unity 2018 cookbook - third edition (3rd ed.) Packt Publishing.
+ 
+ */
 public class MiniMap : MonoBehaviour
 {
     public GameObject mapUI;
@@ -10,13 +15,14 @@ public class MiniMap : MonoBehaviour
     private Transform target;
 
     void Start()
-    {
-        //target = GameObject.FindGameObjectWithTag("Player").transform;
+    { 
+        // We are targeting the passed Player gameobject's transform in
         target = playerObject.transform;
     }
 
     void Update()
     {
+        // We rotate the passed gameobjects z value, to match the player's euler y value
         Vector3 compassAngle = new Vector3();
         compassAngle.z = target.transform.eulerAngles.y;
         mapUI.transform.eulerAngles = compassAngle;

@@ -4,10 +4,15 @@ using UnityEngine;
 
 //Aswad Mirza 991445135
 //Logic to switch cameras of the player, based on the example in week 2
+/*
+ APA rEFERENCE:
+Smith, M., & Safari, an O'Reilly Media Company. (2018). Unity 2018 cookbook - third edition (3rd ed.) Packt Publishing.
+ 
+ */
 public class SwitchCameras : MonoBehaviour
 {
 
-    // I know im only using 4 cameras
+    // I used 4 gameobject References, because I like naming them
     public Camera FPSCam;
     public Camera ThirdPersonCam;
     public Camera LeftCam;
