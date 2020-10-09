@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 //Aswad Mirza 991445135
 
-//Code based  on the example from  the textbook "Unity 2018 Cookbook - Third Edition" - Chapter 2 Excersice 11
+//Code based  on the example from  the textbook "Unity 2018 Cookbook - Third Edition" - Chapter 2 Excersice 11, and from week 3
 
 
 /*
@@ -46,7 +46,7 @@ public class Radar : MonoBehaviour
         radarHeight = rawImageRadarBackground.rectTransform.rect.height;
         blipHeight = radarHeight * blipSizePercentage / 100;
         blipWidth = radarWidth * blipSizePercentage / 100;
-    }
+    }   
 
     void Update()
     {
